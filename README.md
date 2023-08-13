@@ -1,6 +1,6 @@
 # ShrinkMatch
 
-[[`Paper`]()] [[`Logs`](./training-logs)] [[`BibTeX`](https://github.com/LiheYoung/ShrinkMatch#Citation)]
+[[`Paper`]()] [[`Logs`](./training-logs)] [[`BibTeX`](#Citation)]
 
 This codebase provides the official PyTorch implementation of our ICCV 2023 paper:
 
@@ -23,7 +23,7 @@ Our **key insight** is that these uncertain samples can be turned into certain o
 
 ## Results
 
-**We provide all training logs [here](./training-logs). You can refer to them when reproducing.**
+**We provide [all training logs](./training-logs). You can refer to them when reproducing.**
 
 ### CIFAR-10 @40 labels
 
