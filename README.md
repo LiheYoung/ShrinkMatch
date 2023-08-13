@@ -1,6 +1,6 @@
 # ShrinkMatch
 
-[[`Paper`]()] [[`Logs`](./training-logs)] [[`BibTeX`](#Citation)]
+[[`Paper`]()] [[`Logs`](./training-logs)] [[`BibTeX`](#citation)]
 
 This codebase provides the official PyTorch implementation of our ICCV 2023 paper:
 
