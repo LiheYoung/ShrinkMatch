@@ -2,16 +2,16 @@
 
 This codebase provides the official PyTorch implementation of our ICCV 2023 paper:
 
-> **[Shrinking Class Space for Enhanced Certainty in Semi-Supervised Learning]()**</br>
+> **[Shrinking Class Space for Enhanced Certainty in Semi-Supervised Learning](https://arxiv.org/abs/2308.06777)**</br>
 > Lihe Yang, Zhen Zhao, Lei Qi, Yu Qiao, Yinghuan Shi, Hengshuang Zhao</br>
 > *In International Conference on Computer Vision (ICCV), 2023*</br>
 
-Note: This codebase is based on SimMatch. Our baseline is SimMatch.
+Note: This codebase is based on SimMatch for ImageNet-1K. Our baseline is SimMatch.
 
 
 ## Results
 
-**We provide all training logs [here](../training-logs). You can refer to them when reproducing.**
+**We provide [all training logs](../training-logs). You can refer to them when reproducing.**
 
 ### ImageNet-1K
 
@@ -38,14 +38,14 @@ Please follow [this script](https://gist.github.com/BIGBALLON/8a71d225eff18d88e4
 ## Usage
 
 ```
-sh script/dist_train.sh <data_path> <split> <num_gpus> <batch_size> <port>
+CUDA_VISIBLE_DEVICES=<gpu_ids> sh script/dist_train.sh <data_path> <split> <num_gpus> <batch_size> <port>
 ```
 where ``split`` can be 0.01 or 0.1. To reproduce our results, the total batch size of ``num_gpus`` $\times$ ``batch_size`` should be 64. We use 8 V100 GPUs, and each GPU has a batch size of 8.
 
 E.g.,
 
 ```
-sh script/dist_train.sh ./data/ImageNet 0.01 8 8 23456
+CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 sh script/dist_train.sh ./data/ImageNet 0.01 8 8 23456
 ```
 
 

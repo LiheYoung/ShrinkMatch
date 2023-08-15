@@ -2,16 +2,16 @@
 
 This codebase provides the official PyTorch implementation of our ICCV 2023 paper:
 
-> **[Shrinking Class Space for Enhanced Certainty in Semi-Supervised Learning]()**</br>
+> **[Shrinking Class Space for Enhanced Certainty in Semi-Supervised Learning](https://arxiv.org/abs/2308.06777)**</br>
 > Lihe Yang, Zhen Zhao, Lei Qi, Yu Qiao, Yinghuan Shi, Hengshuang Zhao</br>
 > *In International Conference on Computer Vision (ICCV), 2023*</br>
 
-Note: This codebase is based on TorchSSL. Our baseline is FixMatch + DA (Distribution Alignment) on STL-10, while is solely FixMatch on SVHN.
+Note: This codebase is based on TorchSSL for STL-10 and SVHN. Our baseline is FixMatch + DA (Distribution Alignment) on STL-10, while is solely FixMatch on SVHN.
 
 
 ## Results
 
-**We provide all training logs [here](../training-logs). You can refer to them when reproducing.**
+**We provide [all training logs](../training-logs). You can refer to them when reproducing.**
 
 ### STL-10 @40 labels
 
@@ -41,13 +41,13 @@ pip install -r requirements.txt
 ## Usage
 
 ```
-python shrinkmatch.py --c <config> 
+CUDA_VISIBLE_DEVICES=<gpu_id> python shrinkmatch.py --c <config> 
 ```
 
 E.g.,
 
 ```
-python shrinkmatch.py --c config/shrinkmatch_stl10_40labels_seed0.yaml
+CUDA_VISIBLE_DEVICES=0 python shrinkmatch.py --c config/shrinkmatch_stl10_40labels_seed0.yaml
 ```
 
 Data will be automatically downloaded.

@@ -1,10 +1,15 @@
 # ShrinkMatch
 
-[[`Paper`]()] [[`Logs`](./training-logs)] [[`BibTeX`](#citation)]
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shrinking-class-space-for-enhanced-certainty/semi-supervised-image-classification-on-cifar-8)](https://paperswithcode.com/sota/semi-supervised-image-classification-on-cifar-8?p=shrinking-class-space-for-enhanced-certainty)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shrinking-class-space-for-enhanced-certainty/semi-supervised-image-classification-on-stl-3)](https://paperswithcode.com/sota/semi-supervised-image-classification-on-stl-3?p=shrinking-class-space-for-enhanced-certainty)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shrinking-class-space-for-enhanced-certainty/semi-supervised-image-classification-on-svhn-2)](https://paperswithcode.com/sota/semi-supervised-image-classification-on-svhn-2?p=shrinking-class-space-for-enhanced-certainty)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/shrinking-class-space-for-enhanced-certainty/semi-supervised-image-classification-on-svhn-1)](https://paperswithcode.com/sota/semi-supervised-image-classification-on-svhn-1?p=shrinking-class-space-for-enhanced-certainty)
+
+[[`Paper`](https://arxiv.org/abs/2308.06777)] [[`Logs`](./training-logs)] [[`BibTeX`](#citation)]
 
 This codebase provides the official PyTorch implementation of our ICCV 2023 paper:
 
-> **[Shrinking Class Space for Enhanced Certainty in Semi-Supervised Learning]()**</br>
+> **[Shrinking Class Space for Enhanced Certainty in Semi-Supervised Learning](https://arxiv.org/abs/2308.06777)**</br>
 > Lihe Yang, Zhen Zhao, Lei Qi, Yu Qiao, Yinghuan Shi, Hengshuang Zhao</br>
 > *In International Conference on Computer Vision (ICCV), 2023*</br>
 

@@ -2,16 +2,16 @@
 
 This codebase provides the official PyTorch implementation of our ICCV 2023 paper:
 
-> **[Shrinking Class Space for Enhanced Certainty in Semi-Supervised Learning]()**</br>
+> **[Shrinking Class Space for Enhanced Certainty in Semi-Supervised Learning](https://arxiv.org/abs/2308.06777)**</br>
 > Lihe Yang, Zhen Zhao, Lei Qi, Yu Qiao, Yinghuan Shi, Hengshuang Zhao</br>
 > *In International Conference on Computer Vision (ICCV), 2023*</br>
 
-Note: This codebase is based on SimMatch. Our baseline is FixMatch + DA (Distribution Alignment), same as SimMatch.
+Note: This codebase is based on SimMatch for CIFAR-10 and CIFAR-100. Our baseline is FixMatch + DA (Distribution Alignment), same as SimMatch.
 
 
 ## Results
 
-**We provide all training logs [here](../training-logs). You can refer to them when reproducing.**
+**We provide [all training logs](../training-logs). You can refer to them when reproducing.**
 
 ### CIFAR-10 @40 labels
 
@@ -40,13 +40,13 @@ pip install torch==1.12.1+cu113 torchvision==0.13.1+cu113 -f https://download.py
 ## Usage
 
 ```
-sh script/dist_train.sh <dataset> <labels_per_class> <seed> <port>
+CUDA_VISIBLE_DEVICES=<gpu_id> sh script/dist_train.sh <dataset> <labels_per_class> <seed> <port>
 ```
 
 E.g.,
 
 ```
-sh script/dist_train.sh cifar100 4 0 23456
+CUDA_VISIBLE_DEVICES=0 sh script/dist_train.sh cifar100 4 0 23456
 ```
 
 Data will be automatically downloaded.
